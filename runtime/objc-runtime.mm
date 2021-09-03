@@ -376,8 +376,8 @@ void environ_init(void)
     // older SDKs. LRU coalescing can reorder releases and certain older apps
     // are accidentally relying on the ordering.
     // rdar://problem/63886091
-    if (!dyld_program_sdk_at_least(dyld_fall_2020_os_versions))
-        DisableAutoreleaseCoalescingLRU = true;
+//    if (!dyld_program_sdk_at_least(dyld_fall_2020_os_versions))
+//        DisableAutoreleaseCoalescingLRU = true;
 
     bool PrintHelp = false;
     bool PrintOptions = false;
