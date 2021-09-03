@@ -28,7 +28,7 @@
 
 #include "objc-private.h"
 #include "objc-loadmethod.h"
-#include "objc-bp-assist.h"
+//#include "objc-bp-assist.h"
 
 #if TARGET_OS_WIN32
 
