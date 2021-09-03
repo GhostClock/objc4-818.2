@@ -33,7 +33,7 @@
 * Imports.
 **********************************************************************/
 
-#include <os/feature_private.h> // os_feature_enabled_simple()
+//#include <os/feature_private.h> // os_feature_enabled_simple()
 #include "objc-private.h"
 #include "objc-loadmethod.h"
 #include "objc-file.h"
@@ -441,9 +441,9 @@ void environ_init(void)
         }
     }
 
-    if (!os_feature_enabled_simple(objc4, preoptimizedCaches, true)) {
-        DisablePreoptCaches = true;
-    }
+//    if (!os_feature_enabled_simple(objc4, preoptimizedCaches, true)) {
+//        DisablePreoptCaches = true;
+//    }
 
     // Print OBJC_HELP and OBJC_PRINT_OPTIONS output.
     if (PrintHelp  ||  PrintOptions) {
