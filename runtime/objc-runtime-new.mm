@@ -3544,13 +3544,13 @@ void _read_images(header_info **hList, uint32_t hCount, int totalClasses, int un
 # if TARGET_OS_OSX
         // Disable non-pointer isa if the app is too old
         // (linked before OS X 10.11)
-        if (!dyld_program_sdk_at_least(dyld_platform_version_macOS_10_11)) {
-            DisableNonpointerIsa = true;
-            if (PrintRawIsa) {
-                _objc_inform("RAW ISA: disabling non-pointer isa because "
-                             "the app is too old.");
-            }
-        }
+//        if (!dyld_program_sdk_at_least(dyld_platform_version_macOS_10_11)) {
+//            DisableNonpointerIsa = true;
+//            if (PrintRawIsa) {
+//                _objc_inform("RAW ISA: disabling non-pointer isa because "
+//                             "the app is too old.");
+//            }
+//        }
 
         // Disable non-pointer isa if the app has a __DATA,__objc_rawisa section
         // New apps that load old extensions may need this.
