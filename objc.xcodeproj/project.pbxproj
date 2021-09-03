@@ -925,7 +925,7 @@
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
 				LLVM_LTO = NO;
-				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
+				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				"ORDER_FILE[sdk=iphonesimulator*]" = "";
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
@@ -1017,7 +1017,7 @@
 				"INCLUDED_SOURCE_FILE_NAMES[sdk=macosx*][arch=i386]" = "dummy-library-mac-i386.c";
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
-				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
+				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				"ORDER_FILE[sdk=iphonesimulator*]" = "";
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
