@@ -8325,29 +8325,29 @@ classSlotForTagIndex(objc_tag_index_t tag)
 static void
 initializeTaggedPointerObfuscator(void)
 {
-    if (!DisableTaggedPointerObfuscation && dyld_program_sdk_at_least(dyld_fall_2018_os_versions)) {
-        // Pull random data into the variable, then shift away all non-payload bits.
-        arc4random_buf(&objc_debug_taggedpointer_obfuscator,
-                       sizeof(objc_debug_taggedpointer_obfuscator));
-        objc_debug_taggedpointer_obfuscator &= ~_OBJC_TAG_MASK;
-
-#if OBJC_SPLIT_TAGGED_POINTERS
-        // The obfuscator doesn't apply to any of the extended tag mask or the no-obfuscation bit.
-        objc_debug_taggedpointer_obfuscator &= ~(_OBJC_TAG_EXT_MASK | _OBJC_TAG_NO_OBFUSCATION_MASK);
-
-        // Shuffle the first seven entries of the tag permutator.
-        int max = 7;
-        for (int i = max - 1; i >= 0; i--) {
-            int target = arc4random_uniform(i + 1);
-            swap(objc_debug_tag60_permutations[i],
-                 objc_debug_tag60_permutations[target]);
-        }
-#endif
-    } else {
-        // Set the obfuscator to zero for apps linked against older SDKs,
-        // in case they're relying on the tagged pointer representation.
-        objc_debug_taggedpointer_obfuscator = 0;
-    }
+//    if (!DisableTaggedPointerObfuscation && dyld_program_sdk_at_least(dyld_fall_2018_os_versions)) {
+//        // Pull random data into the variable, then shift away all non-payload bits.
+//        arc4random_buf(&objc_debug_taggedpointer_obfuscator,
+//                       sizeof(objc_debug_taggedpointer_obfuscator));
+//        objc_debug_taggedpointer_obfuscator &= ~_OBJC_TAG_MASK;
+//
+//#if OBJC_SPLIT_TAGGED_POINTERS
+//        // The obfuscator doesn't apply to any of the extended tag mask or the no-obfuscation bit.
+//        objc_debug_taggedpointer_obfuscator &= ~(_OBJC_TAG_EXT_MASK | _OBJC_TAG_NO_OBFUSCATION_MASK);
+//
+//        // Shuffle the first seven entries of the tag permutator.
+//        int max = 7;
+//        for (int i = max - 1; i >= 0; i--) {
+//            int target = arc4random_uniform(i + 1);
+//            swap(objc_debug_tag60_permutations[i],
+//                 objc_debug_tag60_permutations[target]);
+//        }
+//#endif
+//    } else {
+//        // Set the obfuscator to zero for apps linked against older SDKs,
+//        // in case they're relying on the tagged pointer representation.
+//        objc_debug_taggedpointer_obfuscator = 0;
+//    }
 }
 
 
