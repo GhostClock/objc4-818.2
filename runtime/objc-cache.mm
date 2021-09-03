@@ -84,7 +84,7 @@
 #include "objc-private.h"
 
 #if TARGET_OS_OSX
-#include <Cambria/Traps.h>
+//#include <Cambria/Traps.h>
 #include <Cambria/Cambria.h>
 #endif
 
