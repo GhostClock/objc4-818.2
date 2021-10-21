@@ -146,7 +146,9 @@
 		83F550E0155E030800E95D3B /* objc-cache-old.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83F550DF155E030800E95D3B /* objc-cache-old.mm */; };
 		87BB4EA70EC39854005D08E1 /* objc-probes.d in Sources */ = {isa = PBXBuildFile; fileRef = 87BB4E900EC39633005D08E1 /* objc-probes.d */; };
 		9672F7EE14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
-		B0403E9826E2092000C197B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0403E9726E2092000C197B7 /* main.m */; };
+		B0770211271D156E009D958F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0770210271D156E009D958F /* main.m */; };
+		B077025F271D1719009D958F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B077024F271D1708009D958F /* Person.m */; };
+		B0770270271D189D009D958F /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = B077026F271D189D009D958F /* Teacher.m */; };
 		C22F5208230EF38B001BFE14 /* objc-ptrauth.h in Headers */ = {isa = PBXBuildFile; fileRef = C22F5207230EF38B001BFE14 /* objc-ptrauth.h */; };
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		C2EB731D23D8A38A0040672B /* dummy-library-mac-i386.c in Sources */ = {isa = PBXBuildFile; fileRef = C2EB731C23D8A38A0040672B /* dummy-library-mac-i386.c */; };
@@ -170,7 +172,7 @@
 			remoteGlobalIDString = D2AAC0620554660B00DB518D;
 			remoteInfo = objc;
 		};
-		B0403EA326E2093D00C197B7 /* PBXContainerItemProxy */ = {
+		B077021C271D1588009D958F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -198,7 +200,7 @@
 			name = "Install Manpages";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		B0403E9326E2092000C197B7 /* CopyFiles */ = {
+		B077020C271D156E009D958F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -329,8 +331,12 @@
 		83F550DF155E030800E95D3B /* objc-cache-old.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-cache-old.mm"; path = "runtime/objc-cache-old.mm"; sourceTree = "<group>"; };
 		87BB4E900EC39633005D08E1 /* objc-probes.d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.dtrace; name = "objc-probes.d"; path = "runtime/objc-probes.d"; sourceTree = "<group>"; };
 		9672F7ED14D5F488007CEC96 /* NSObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSObject.mm; path = runtime/NSObject.mm; sourceTree = "<group>"; };
-		B0403E9526E2092000C197B7 /* objc_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objc_test; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0403E9726E2092000C197B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B077020E271D156E009D958F /* objc4Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objc4Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0770210271D156E009D958F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B077024E271D1708009D958F /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B077024F271D1708009D958F /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B077026E271D189D009D958F /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		B077026F271D189D009D958F /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		BC8B5D1212D3D48100C78A5B /* libauto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauto.dylib; path = /usr/lib/libauto.dylib; sourceTree = "<absolute>"; };
 		C217B55222DE556D004369BA /* objc-env.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-env.h"; path = "runtime/objc-env.h"; sourceTree = "<group>"; };
 		C22F5207230EF38B001BFE14 /* objc-ptrauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-ptrauth.h"; path = "runtime/objc-ptrauth.h"; sourceTree = "<group>"; };
@@ -357,7 +363,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0403E9226E2092000C197B7 /* Frameworks */ = {
+		B077020B271D156E009D958F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,7 +400,7 @@
 				838485B20D6D67F900CEA253 /* Other */,
 				6EF877D82325D62600963DBB /* objcdt */,
 				E9AD465824925261002AF1DB /* check-preopt-caches */,
-				B0403E9626E2092000C197B7 /* objc_test */,
+				B077020F271D156E009D958F /* objc4Demo */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				F9BCC72A205C6A1600DD9AFC /* Frameworks */,
 			);
@@ -460,7 +466,7 @@
 				D2AAC0630554660B00DB518D /* libobjc.A.dylib */,
 				F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */,
 				6EF877D72325D62600963DBB /* objcdt */,
-				B0403E9526E2092000C197B7 /* objc_test */,
+				B077020E271D156E009D958F /* objc4Demo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -581,12 +587,16 @@
 			name = "Project Headers";
 			sourceTree = "<group>";
 		};
-		B0403E9626E2092000C197B7 /* objc_test */ = {
+		B077020F271D156E009D958F /* objc4Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B0403E9726E2092000C197B7 /* main.m */,
+				B0770210271D156E009D958F /* main.m */,
+				B077024E271D1708009D958F /* Person.h */,
+				B077024F271D1708009D958F /* Person.m */,
+				B077026E271D189D009D958F /* Teacher.h */,
+				B077026F271D189D009D958F /* Teacher.m */,
 			);
-			path = objc_test;
+			path = objc4Demo;
 			sourceTree = "<group>";
 		};
 		E9AD465824925261002AF1DB /* check-preopt-caches */ = {
@@ -698,22 +708,22 @@
 			productReference = 6EF877D72325D62600963DBB /* objcdt */;
 			productType = "com.apple.product-type.tool";
 		};
-		B0403E9426E2092000C197B7 /* objc_test */ = {
+		B077020D271D156E009D958F /* objc4Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0403E9926E2092000C197B7 /* Build configuration list for PBXNativeTarget "objc_test" */;
+			buildConfigurationList = B0770212271D156E009D958F /* Build configuration list for PBXNativeTarget "objc4Demo" */;
 			buildPhases = (
-				B0403E9126E2092000C197B7 /* Sources */,
-				B0403E9226E2092000C197B7 /* Frameworks */,
-				B0403E9326E2092000C197B7 /* CopyFiles */,
+				B077020A271D156E009D958F /* Sources */,
+				B077020B271D156E009D958F /* Frameworks */,
+				B077020C271D156E009D958F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0403EA426E2093D00C197B7 /* PBXTargetDependency */,
+				B077021D271D1588009D958F /* PBXTargetDependency */,
 			);
-			name = objc_test;
-			productName = objc_test;
-			productReference = B0403E9526E2092000C197B7 /* objc_test */;
+			name = objc4Demo;
+			productName = objc4Demo;
+			productReference = B077020E271D156E009D958F /* objc4Demo */;
 			productType = "com.apple.product-type.tool";
 		};
 		D2AAC0620554660B00DB518D /* objc */ = {
@@ -777,7 +787,7 @@
 					837F67A81A771F63004D34FA = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					B0403E9426E2092000C197B7 = {
+					B077020D271D156E009D958F = {
 						CreatedOnToolsVersion = 12.4;
 						ProvisioningStyle = Automatic;
 					};
@@ -803,7 +813,7 @@
 				834F9B01212E560100F95A54 /* objc4_tests */,
 				6EF877EF23263D7000963DBB /* objc_executables */,
 				6EF877D62325D62600963DBB /* objcdt */,
-				B0403E9426E2092000C197B7 /* objc_test */,
+				B077020D271D156E009D958F /* objc4Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -869,11 +879,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0403E9126E2092000C197B7 /* Sources */ = {
+		B077020A271D156E009D958F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0403E9826E2092000C197B7 /* main.m in Sources */,
+				B0770211271D156E009D958F /* main.m in Sources */,
+				B0770270271D189D009D958F /* Teacher.m in Sources */,
+				B077025F271D1719009D958F /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -952,10 +964,10 @@
 			target = D2AAC0620554660B00DB518D /* objc */;
 			targetProxy = 837F67AC1A771F6E004D34FA /* PBXContainerItemProxy */;
 		};
-		B0403EA426E2093D00C197B7 /* PBXTargetDependency */ = {
+		B077021D271D1588009D958F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC0620554660B00DB518D /* objc */;
-			targetProxy = B0403EA326E2093D00C197B7 /* PBXContainerItemProxy */;
+			targetProxy = B077021C271D1588009D958F /* PBXContainerItemProxy */;
 		};
 		F9BCC729205C6A0900DD9AFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1333,7 +1345,7 @@
 			};
 			name = Release;
 		};
-		B0403E9A26E2092000C197B7 /* Debug */ = {
+		B0770213271D156E009D958F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1388,7 +1400,7 @@
 			};
 			name = Debug;
 		};
-		B0403E9B26E2092000C197B7 /* Release */ = {
+		B0770214271D156E009D958F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1572,11 +1584,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0403E9926E2092000C197B7 /* Build configuration list for PBXNativeTarget "objc_test" */ = {
+		B0770212271D156E009D958F /* Build configuration list for PBXNativeTarget "objc4Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0403E9A26E2092000C197B7 /* Debug */,
-				B0403E9B26E2092000C197B7 /* Release */,
+				B0770213271D156E009D958F /* Debug */,
+				B0770214271D156E009D958F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

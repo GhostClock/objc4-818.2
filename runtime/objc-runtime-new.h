@@ -337,14 +337,14 @@ extern "C" IMP cache_getImp(Class cls, SEL sel, IMP value_on_constant_cache_miss
 
 struct cache_t {
 private:
-    explicit_atomic<uintptr_t> _bucketsAndMaybeMask;
+    explicit_atomic<uintptr_t> _bucketsAndMaybeMask; // 8
     union {
         struct {
-            explicit_atomic<mask_t>    _maybeMask;
+            explicit_atomic<mask_t>    _maybeMask; // 4
 #if __LP64__
-            uint16_t                   _flags;
+            uint16_t                   _flags; // 2
 #endif
-            uint16_t                   _occupied;
+            uint16_t                   _occupied; // 2
         };
         explicit_atomic<preopt_cache_t *> _originalPreoptCache;
     };
@@ -1690,9 +1690,9 @@ struct objc_class : objc_object {
   objc_class(objc_class&&) = delete;
   void operator=(const objc_class&) = delete;
   void operator=(objc_class&&) = delete;
-    // Class ISA;
-    Class superclass;
-    cache_t cache;             // formerly cache pointer and vtable
+    // Class ISA; //8
+    Class superclass; // 8
+    cache_t cache;      //16       // formerly cache pointer and vtable 
     class_data_bits_t bits;    // class_rw_t * plus custom rr/alloc flags
 
     Class getSuperclass() const {
